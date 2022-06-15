@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_widgets/screens/column_widget.dart';
 import 'package:flutter_widgets/screens/row_widget.dart';
 
 void main() {
@@ -9,7 +10,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(home: RowWidget() ,debugShowCheckedModeBanner: false,);
+    return MaterialApp(home: ColumnWidget() ,debugShowCheckedModeBanner: false,);
   }
 }
 
