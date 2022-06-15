@@ -7,7 +7,7 @@ class RowWidget extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(centerTitle:true ,title:Text("Exploring row widget"),backgroundColor: Colors.deepPurpleAccent),
       body: Row(
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Text("Naruto",style: TextStyle(fontSize: 20),),
           Text("kakashi",style: TextStyle(fontSize: 20),),
