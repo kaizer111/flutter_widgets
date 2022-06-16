@@ -9,10 +9,12 @@ class ColumnWidget extends StatelessWidget {
       appBar: AppBar(centerTitle:true ,title:Text("Exploring column widget"),backgroundColor: Colors.deepPurpleAccent),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.end,
 
         children: [
+
           Text('naruto',style: TextStyle(fontSize: 20),),
-          Text("kakashi",style: TextStyle(fontSize: 20),),
+          Text("sasuke",style: TextStyle(fontSize: 20),),
           Text("Minato",style: TextStyle(fontSize: 20),),
         ],
       ),
