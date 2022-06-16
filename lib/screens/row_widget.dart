@@ -21,3 +21,4 @@ class RowWidget extends StatelessWidget {
   }
 }
 
+// NOTE : Crossallignment in a row works with resect to the largest element in the row
