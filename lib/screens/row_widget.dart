@@ -51,6 +51,8 @@ class _RowWidgetState extends State<RowWidget> {
           title: Text('KAKASHI'),
           backgroundColor: Colors.deepPurpleAccent),
       floatingActionButton: FloatingActionButton(
+
+        elevation: 10,
         backgroundColor: Colors.indigo,
         onPressed: (){
           print('pressed');
