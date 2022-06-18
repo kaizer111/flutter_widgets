@@ -50,6 +50,13 @@ class _RowWidgetState extends State<RowWidget> {
           ),
           title: Text('KAKASHI'),
           backgroundColor: Colors.deepPurpleAccent),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.indigo,
+        onPressed: (){
+          print('pressed');
+        },
+        child: Icon(Icons.add),
+      ),
       // body: Row(
       //   crossAxisAlignment: CrossAxisAlignment.end,
       //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
