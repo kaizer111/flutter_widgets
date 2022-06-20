@@ -50,15 +50,24 @@ class _RowWidgetState extends State<RowWidget> {
           ),
           title: Text('KAKASHI'),
           backgroundColor: Colors.deepPurpleAccent),
-      floatingActionButton: FloatingActionButton(
+          floatingActionButton: Container(
+            alignment: Alignment.center,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(Icons.shopping_cart,color: Colors.white),
+                SizedBox(width: 6),
+                Text('cart',style: TextStyle(color: Colors.white),),
+              ],
+            ),
+            height: 60,width: 120,
+            decoration: BoxDecoration(
+              color: Colors.red,
+              borderRadius: BorderRadius.circular(15),
 
-        elevation: 10,
-        backgroundColor: Colors.indigo,
-        onPressed: (){
-          print('pressed');
-        },
-        child: Icon(Icons.add),
-      ),
+            ),
+          ),
+
       // body: Row(
       //   crossAxisAlignment: CrossAxisAlignment.end,
       //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
