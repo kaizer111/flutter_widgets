@@ -7,16 +7,38 @@ class ColumnWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(centerTitle:true ,title:Text("Exploring column widget"),backgroundColor: Colors.deepPurpleAccent),
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.end,
+      //Single child scrollview is used to make a list scroolview
+      body: SingleChildScrollView(
+        child: Column(
 
-        children: [
+          mainAxisAlignment: MainAxisAlignment.start,
 
-          Text('naruto',style: TextStyle(fontSize: 20),),
-          Text("sasuke",style: TextStyle(fontSize: 20),),
-          Text("Minato",style: TextStyle(fontSize: 20),),
-        ],
+          children: [
+
+            Text('naruto',style: TextStyle(fontSize: 30),),
+            Text("sasuke",style: TextStyle(fontSize: 30),),
+            Text("shisui",style: TextStyle(fontSize: 30),),
+            Text("Itachi",style: TextStyle(fontSize: 30),),
+            Text("might",style: TextStyle(fontSize: 30),),
+            Text("jiraya",style: TextStyle(fontSize: 30),),
+            Text("sasuke",style: TextStyle(fontSize: 30),),
+            Text("danzo",style: TextStyle(fontSize: 30),),
+            Text("sakura",style: TextStyle(fontSize: 30),),
+            Text("Minato",style: TextStyle(fontSize: 30),),
+            Text("Minato",style: TextStyle(fontSize: 30),),
+            Text("Minato",style: TextStyle(fontSize: 30),),
+            Text("Minato",style: TextStyle(fontSize: 30),),
+            Text("Minato",style: TextStyle(fontSize: 30),),
+            Text("Minato",style: TextStyle(fontSize: 30),),
+            Text("Minato",style: TextStyle(fontSize: 30),),
+            Text("Minato",style: TextStyle(fontSize: 30),),
+            Text("Minato",style: TextStyle(fontSize: 30),),
+            Text("Minato",style: TextStyle(fontSize: 30),),
+            Text("Minato",style: TextStyle(fontSize: 30),),
+            Text("Minato",style: TextStyle(fontSize: 30),),
+            Text("Minato",style: TextStyle(fontSize: 30),),
+          ],
+        ),
       ),
     );;
   }
