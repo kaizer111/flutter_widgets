@@ -1,3 +1,5 @@
+
+
 import 'package:flutter/material.dart';
 
 class RowWidget extends StatefulWidget {
@@ -8,6 +10,7 @@ class RowWidget extends StatefulWidget {
 
 class _RowWidgetState extends State<RowWidget> {
   int selectedindex=0;
+  bool showFloatingbutton=false;
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +53,7 @@ class _RowWidgetState extends State<RowWidget> {
           ),
           title: Text('KAKASHI'),
           backgroundColor: Colors.deepPurpleAccent),
-          floatingActionButton: Container(
+          floatingActionButton: showFloatingbutton? Container(
             alignment: Alignment.center,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -66,19 +69,16 @@ class _RowWidgetState extends State<RowWidget> {
               borderRadius: BorderRadius.circular(15),
 
             ),
-          ),
+            //sizedbox and showfloatingbutton before container causes cart to dissappear when box is not checked
+          ): SizedBox(),
 
-      // body: Row(
-      //   crossAxisAlignment: CrossAxisAlignment.end,
-      //   mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      //
-      //   children: [
-      //
-      //     Text('naruto',style: TextStyle(fontSize: 20),),
-      //     Container(height:  100,width: 50,color: Colors.amber,),
-      //     Text("Minato",style: TextStyle(fontSize: 20),),
-      //   ],
-      // ),
+      body: Center(
+        child: IconButton(icon: Icon(showFloatingbutton?Icons.check_box:Icons.check_box_outline_blank),color: Colors.green,iconSize: 35,
+        onPressed: () {setState((){
+          showFloatingbutton=!showFloatingbutton;
+        });},
+        ),
+      ),
     );
   }
 }
