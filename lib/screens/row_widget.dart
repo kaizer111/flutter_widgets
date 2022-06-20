@@ -69,7 +69,7 @@ class _RowWidgetState extends State<RowWidget> {
               borderRadius: BorderRadius.circular(15),
 
             ),
-            //sizedbox and showfloatingbutton before container causes cart to dissappear when box is not checked
+            //sizedbox and showbox before container causes cart to dissappear when box is not checked
           ): SizedBox(),
 
       body: Center(
