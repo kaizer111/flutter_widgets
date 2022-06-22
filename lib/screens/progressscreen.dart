@@ -12,7 +12,7 @@ class Progressscreen extends StatelessWidget {
       ),
       body: Center(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             CircularProgressIndicator(
@@ -21,6 +21,13 @@ class Progressscreen extends StatelessWidget {
               valueColor: AlwaysStoppedAnimation<Color>(Colors.red),
               // value indicates the progress in download percentage (ranging from 0.0 - 1.0)
               //value: 0.8,
+            ),
+            SizedBox(
+              width: 100,
+              child: LinearProgressIndicator(
+                backgroundColor: Colors.amber,
+                valueColor: AlwaysStoppedAnimation<Color>(Colors.red),
+              ),
             ),
           ],
         ),
