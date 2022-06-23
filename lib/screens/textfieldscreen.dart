@@ -15,6 +15,14 @@ class TextfieldScreen extends StatelessWidget {
         child: SizedBox(
           width: 300,
           child: TextFormField(
+            decoration: InputDecoration(
+                labelText: 'name',
+              labelStyle: TextStyle(fontSize: 25,color: Colors.greenAccent,),
+              enabledBorder: OutlineInputBorder(
+                borderSide: BorderSide(color: Colors.green,style: BorderStyle.solid,width: 1.5,),
+                borderRadius: BorderRadius.all(Radius.circular(10)),
+              )
+            ),
 
           ),
         ),
