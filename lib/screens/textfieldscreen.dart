@@ -18,10 +18,14 @@ class TextfieldScreen extends StatelessWidget {
             decoration: InputDecoration(
                 labelText: 'name',
               labelStyle: TextStyle(fontSize: 25,color: Colors.greenAccent,),
-              enabledBorder: OutlineInputBorder(
-                borderSide: BorderSide(color: Colors.green,style: BorderStyle.solid,width: 1.5,),
-                borderRadius: BorderRadius.all(Radius.circular(10)),
-              )
+              // enabledBorder: OutlineInputBorder(
+              //   borderSide: BorderSide(color: Colors.green,style: BorderStyle.solid,width: 1.5,),
+              //   borderRadius: BorderRadius.all(Radius.circular(10)),
+              // ),
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(color: Colors.green,style: BorderStyle.solid,width: 1.5,),
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                ),
             ),
 
           ),
