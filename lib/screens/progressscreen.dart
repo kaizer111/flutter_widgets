@@ -9,7 +9,22 @@ class Progressscreen extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.indigo,
         shadowColor: Colors.pink,
+        title: Center(
+          child: Text('progress screen'),
+        ),
       ),
+        bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.red,
+        unselectedItemColor: Colors.deepPurpleAccent,
+        backgroundColor: Colors.white70,
+        onTap: ((index) {}),
+
+
+        items: [BottomNavigationBarItem(icon: Icon(Icons.home), label: 'home',),
+        BottomNavigationBarItem(icon: Icon(Icons.shopping_cart),label: 'cart',),
+        BottomNavigationBarItem(icon: Icon(Icons.person) , label: 'account',),
+    ],
+        ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -23,7 +38,7 @@ class Progressscreen extends StatelessWidget {
               //value: 0.8,
             ),
             SizedBox(
-              width: 100,
+              width: 200,
               child: LinearProgressIndicator(
                 backgroundColor: Colors.amber,
                 valueColor: AlwaysStoppedAnimation<Color>(Colors.red),

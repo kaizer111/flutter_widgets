@@ -12,7 +12,7 @@ class Gridviewbuilderscreen extends StatelessWidget {
       ),
       body: GridView.builder(
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-          // crossaxis count is used forno of child on a rowk
+          // crossaxis count is used forno of child on a row
           crossAxisCount: 4,
           mainAxisSpacing: 6.0,
           crossAxisSpacing: 6.0,
