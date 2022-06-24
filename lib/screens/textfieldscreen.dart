@@ -16,7 +16,7 @@ class TextfieldScreen extends StatelessWidget {
           width: 300,
           child: TextFormField(
 
-
+            minLines: 1,
             keyboardType: TextInputType.name,
             keyboardAppearance: Brightness.dark,
             decoration: InputDecoration(
